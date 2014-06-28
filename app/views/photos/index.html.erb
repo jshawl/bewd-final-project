@@ -1,7 +1,7 @@
 <h1>Photos</h1>
-
 <%= link_to 'Create New', new_photo_path %>
-
 <% @photos.each do |p| %>
   <h1><%= p.title %></h1>
+  <%= link_to 'Delete', p,  :method => :delete  %>
+
 <% end %>

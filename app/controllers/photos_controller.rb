@@ -17,6 +17,12 @@ class PhotosController < ApplicationController
     redirect_to photo_path @photo if @photo.save
   end
 
+  def destroy
+    @photo = Photo.find( params[:id] )
+    @photo.destroy
+    redirect_to photos_path
+  end
+
   private
 
   def photo_params
