@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :albums
   resources :photos 
 
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
